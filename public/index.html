@@ -1,49 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
-			crossorigin="anonymous"
-		/>
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<title>ChatCord App</title>
-	</head>
-	<body>
-		<div class="join-container">
-			<center>
-			<img src="https://www.phuket.psu.ac.th/wp-content/uploads/2019/03/cropped-PSU_PHUKET-EN.png" alt="Logo"  style="width: 500px;"></center>
-			<br>
-			<header class="join-header">
-				<h1> Dot Chat</h1>
-			</header>
-			<main class="join-main">
-				<form action="chat.html">
-					<div class="form-control">
-					<div class="form-group">
-						<label for="username">ชื่อผู้ใช้</label>
-						<input type="text" class="form-control" name="username" id="username" placeholder="กรอกชื่อผู้ใช้" required>
-					  </div>
-					</div>
-					<!-- <div class="form-control">
-						<label for="username">Username</label>
-						<input
-							type="text"
-							name="username"
-							id="username"
-							placeholder="Enter username..."
-							required
-						/>
-					</div> -->
-					<div class="form-control">
-						<div class="form-group">
-						<label for="room">Room</label>
-						<select class="form-select form-select-lg mb-3" name="room" id="room">
+
+    <head>
+        
+        <meta charset="utf-8" />
+        <title>Log in | Doot - Gourp 3 Chat APP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Doot - Responsive Chat App Template in HTML. A fully featured HTML chat messenger template in Bootstrap 5" name="description" />
+        <meta name="keywords" content="Doot chat template, chat, web chat template, chat status, chat template, communication, discussion, group chat, message, messenger template, status"/>
+        <meta content="Themesbrand" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico" id="tabIcon">
+
+        
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+
+    </head>
+
+    <body>
+        <div class="auth-bg">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col-xl-3 col-lg-4">
+                        <div class="p-4 pb-0 p-lg-5 pb-lg-0 auth-logo-section">
+                            <div class="text-white-50">
+                                <h3><a href="index.html" class="text-white"><i class="bx bxs-message-alt-detail align-middle text-white h3 mb-1 me-2"></i> Project Noob</a></h5>
+                                <p class="font-size-16">Gourp 3 Chat App</p>
+                            </div>
+                            <div class="mt-auto">
+                                <img src="assets/images/auth-img.png" alt="" class="auth-img">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                    <div class="col-xl-9 col-lg-8">
+                        <div class="authentication-page-content">
+                            <div class="d-flex flex-column h-100 px-4 pt-4">
+                                <div class="row justify-content-center my-auto">
+                                    <div class="col-sm-8 col-lg-6 col-xl-5 col-xxl-4">
+                                        
+                                        <div class="py-md-5 py-4">
+                                            
+                                            <div class="text-center mb-5">
+                                                <h3>ยินดีต้อนรับ</h3>
+                                                <p class="text-muted">โปรแกรมแชทที่ดีที่สุดในสามโลกกกก</p>
+                                            </div>
+                                            <form action="chat.html">
+                                                <div class="mb-3">
+                                                    <label for="username" class="form-label">ชื่อผู้ใข้</label>
+                                                    <input type="text" class="form-control" name="username" id="username" placeholder="กรอกชื่อผู้ใช้" required>
+                                                </div>
+                                                
+                                                <div class="mb-3">
+                                                    <label for="room" class="form-label">ห้องสทนา</label>
+                                                    <div class="position-relative auth-pass-inputgroup mb-3">
+                                                        <select class="form-select form-select-lg mb-3" name="room" id="room">
 							<option value="JavaScript">JavaScript</option>
 							<option value="Python">Python</option>
 							<option value="PHP">PHP</option>
@@ -51,52 +68,52 @@
 							<option value="Ruby">Ruby</option>
 							<option value="Java">Java</option>
 						</select>
-					
-					<div class="container parent" style="height: auto;">
-						<div class="row">
-							<div class='col text-center'>
-							<input type="radio" name="imgbackground" id="img1" class="d-none imgbgchk" value="">
-							  <label for="img1">
-								<img src="https://www.monetbil.com/support/wp-content/uploads/2021/01/java-logo-vector.png" alt="Image 1">
-								<div class="tick_container">
-								  <div class="tick"><i class="fa fa-check"></i></div>
-								</div>
-								</label>
-							</div>
-							<div class='col text-center'>
-							<input type="radio" name="imgbackground" id="img2" class="d-none imgbgchk" value="">
-							  <label for="img2">
-								<img src="https://irisprojects.com/wp-content/uploads/2018/09/python-logo-png-python-logo-450.png" alt="Image 2">
-								<div class="tick_container">
-								  <div class="tick"><i class="fa fa-check"></i></div>
-								</div>
-							  </label>
-							</div>
-							<div class='col text-center'>
-							<input type="radio" name="imgbackground" id="img3" class="d-none imgbgchk" value="">
-							  <label for="img3">
-								<img src="http://pngimg.com/uploads/php/php_PNG43.png" alt="Image 3">
-								<div class="tick_container">
-								  <div class="tick"><i class="fa fa-check"></i></div>
-								</div>
-							  </label>
-							</div>
-							<div class='col text-center'>
-							<input type="radio" name="imgbackground" id="img4" class="d-none imgbgchk" value="">
-								<label for="img4">
-								  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png" alt="Image 4">
-								  <div class="tick_container">
-									<div class="tick"><i class="fa fa-check"></i></div>
-								  </div>
-								</label>
-							</div>
-						  </div>
-						</div>
-					</div>
-				</div>
-					<button type="submit" class="btn btn-primary mb-2">เข้าร่วมห้องแชท</button>
-				</form>
-			</main>
-		</div>
-	</body>
+                                                    </div>
+                                                </div>
+        
+            
+                                                <div class="text-center mt-4">
+                                                    <button class="btn btn-primary w-100" type="submit">เข้าสู่ห้องแชท</button>
+                                                </div>
+                                            </form><!-- end form -->
+            
+                                            <div class="mt-5 text-center text-muted">
+                                                <p>ดูรายชื่อผู้จัดทํา > <a href="auth-register.html" class="fw-medium text-decoration-underline"> ผู้จัดทํา</a></p>
+                                            </div>
+                                        </div>
+                                    </div><!-- end col -->
+                                </div><!-- end row -->
+            
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="text-center text-muted p-4">
+                                            <p class="mb-0">&copy; <script>document.write(new Date().getFullYear())</script> KornTK. Crafted For <i class="mdi mdi-heart text-danger"></i> Data Communication&Network	</p>
+                                        </div>
+                                    </div><!-- end col -->
+                                </div><!-- end row -->
+            
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container-fluid -->
+        </div>
+        <!-- end auth bg -->
+
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/node-waves/waves.min.js"></script>
+        <!-- password addon -->
+        <script src="assets/js/pages/password-addon.init.js"></script>
+
+        <!-- theme-style init -->
+        <script src="assets/js/pages/theme-style.init.js"></script>
+        
+        <script src="assets/js/app.js"></script>
+
+    </body>
 </html>

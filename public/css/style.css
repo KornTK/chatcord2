@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 :root {
-	--dark-color-a: #0071bd;
-	--dark-color-b: #6cc0e4;
-	--light-color: #e6e9ff;
+	--dark-color-a: #4eac6d;
+	--dark-color-b: #ffffff;
+	--light-color: #4eac6d99;
 	--success-color: #5cb85c;
 	--error-color: #d9534f;
 }
@@ -123,7 +123,7 @@ a {
 .chat-form-container input[type='text'] {
 	font-size: 16px;
 	padding: 5px;
-	height: 40px;
+	height: 51px;
 	flex: 1;
 }
 
