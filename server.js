@@ -34,7 +34,7 @@ io.on('connection', socket => {
       .to(user.room)
       .emit(
         'message',
-        formatMessage(botName, `${user.username} ได้เข้าร่วมห้องสทนาแล้ว!`)
+        formatMessage(botName, ` 🙋 ${user.username} ได้เข้าร่วมห้องสทนาแล้ว!`)
       );
 
     // Send users and room info
@@ -58,7 +58,7 @@ io.on('connection', socket => {
     if (user) {
       io.to(user.room).emit(
         'message',
-        formatMessage(botName, `${user.username} ได้ออกจากช่องสทนาแล้ว`)
+        formatMessage(botName, `⛔ ${user.username} ได้ออกจากช่องสทนาแล้ว`)
       );
 
       // Send users and room info
@@ -72,4 +72,4 @@ io.on('connection', socket => {
 
 const PORT = process.env.PORT || 3000;
 
-server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+server.listen(PORT, () => console.log(`Server running on port ${PORT} It work!!!`));
